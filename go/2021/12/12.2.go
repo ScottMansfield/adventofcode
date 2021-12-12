@@ -26,7 +26,6 @@ func ensureNode(g graph, name string) {
 	}
 }
 
-// Assumes nodes exist
 func connect(g graph, node1, node2 string) {
 	ensureNode(g, node1)
 	ensureNode(g, node2)
