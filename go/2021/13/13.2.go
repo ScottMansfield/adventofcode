@@ -154,12 +154,6 @@ func main() {
 		},
 	)
 
-	// for x := 0; x < int(maxx); x++ {
-	// 	for y := 0; y < int(maxy); y++ {
-	// 		img.
-	// 	}
-	// }
-
 	for p := range pap {
 		img.Set(int(p.x), int(p.y), color.White)
 	}
