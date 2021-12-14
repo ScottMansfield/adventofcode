@@ -127,12 +127,12 @@ func main() {
 
 	counts := countChars(seq)
 
+	counts[startChar] = counts[startChar] + 1
+	counts[endChar] = counts[endChar] + 1
+
 	for char, count := range counts {
 		counts[char] = count / 2
 	}
-
-	counts[startChar] = counts[startChar] + 1
-	counts[endChar] = counts[endChar] + 1
 
 	for char, count := range counts {
 		fmt.Printf("%c: %d\n", char, count)
